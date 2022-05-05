@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio - Home</title>
+
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body style="background-color:rgb(167, 172, 175);">
+    
+    <nav class="navbar">
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+
+            <li><a href="about.html">About</a></li>
+    
+            <li><a href="contact.html">Contact</a></li>
+        
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+</nav>
+<h1 class="headings"> My Portfolio</h1>
+    <div class="full-img" id="fullImgBox">
+        <img src="image5.jpg" id = "fullImg">
+        <span onclick="closeFullImg()">X</span>
+
+    </div>
+    <div class="gal"> 
+        <img src="image1.jpg"onclick="openFullImg(this.src)">
+            <img src="image2.jpg"onclick="openFullImg(this.src)">
+        
+            <img src="image3.jpg"onclick="openFullImg(this.src)">
+        
+            <img src="image4.jpg"onclick="openFullImg(this.src)">
+       
+            <img src="image5.jpg"onclick="openFullImg(this.src)">
+        
+            <img src="image6.jpg"onclick="openFullImg(this.src)">
+        
+            <img src="image7.jpg"onclick="openFullImg(this.src)">
+        
+            <img src="image10.jpg"onclick="openFullImg(this.src)">
+        
+            <img src="image9.jpg"onclick="openFullImg(this.src)">
+        </div>
+    </div>
+
+    <script>
+        var fullImgBox = document.getElementById("fullImgBox");
+        var fullImg = document.getElementById("fullImg");
+
+
+        function openFullImg(pic){
+            fullImgBox.style.display = "flex";
+            fullImg.src = pic;
+        }
+
+        function closeFullImg(){
+            fullImgBox.style.display = "none";
+        }
+
+
+    </script>
+
+
+
+</body>
+
+</html>
